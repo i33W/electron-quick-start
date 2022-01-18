@@ -4,6 +4,7 @@ const { app, BrowserWindow } = require("electron");
 // (1. 창 관리 2. 앱 생명주기 관리 3. 네이티브 APIs)
 // app 모듈은 앱 생명주기를 관리함
 // BrowserWindow 모듈은 전체 창을 관리함
+const path = require("path");
 
 const createWindow = () => {
   const win = new BrowserWindow({
@@ -11,6 +12,9 @@ const createWindow = () => {
     // app.whenReady() 이후 win 생성 가능
     width: 800,
     height: 600,
+    webPreferences: {
+      preload: path.join(__dirname, "preload.js"),
+    },
   });
 
   win.loadFile("index.html");
