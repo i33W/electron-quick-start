@@ -1,0 +1,22 @@
+{
+  "name": "electron-study",
+  "version": "1.0.0",
+  "description": "Hello World!",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/i33W/electron-study.git"
+  },
+  "author": "bomee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/i33W/electron-study/issues"
+  },
+  "homepage": "https://github.com/i33W/electron-study#readme",
+  "devDependencies": {
+    "electron": "^16.0.7"
+  }
+}
